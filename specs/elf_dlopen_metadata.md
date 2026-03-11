@@ -125,7 +125,16 @@ Contents of section .note.dlopen:
 ...
 ```
 
-It is more convenient to use a higher level tool:
+For a quick look it is more convenient to use `systemd-analyze dlopen-metadata`:
+```console
+$ systemd-analyze dlopen-metadata /usr/lib64/libsystemd.so.0
+FEATURE DESCRIPTION                                            SONAME       PRIORITY   
+lzma    Support lzma compression in journal and coredump files liblzma.so.5 suggested
+lz4     Support lz4 compression in journal and coredump files  liblz4.so.1  suggested
+zstd    Support zstd compression in journal and coredump files libzstd.so.1 recommended
+```
+
+Another higher level tool is `dlopen-notes`:
 ```console
 $ dlopen-notes /usr/lib64/systemd/libsystemd-shared-257.so
 # /usr/lib64/systemd/libsystemd-shared-257.so
