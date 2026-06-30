@@ -110,6 +110,15 @@ In both cases it is important that data measured into the PCRs is carefully chos
 
   <tr>
    <td class=number></td>
+   <td class=systemd><code>systemd-stub 🚀</code></td>
+   <td>UEFI Stub</td>
+   <td>Measurement of SMBIOS Type 1, 2, 11 as set when the UEFI stub takes over</td>
+   <td>UEFI TPM event log</td>
+   <td>n/a</td>
+  </tr>
+
+  <tr>
+   <td class=number></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
    <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
@@ -389,6 +398,12 @@ In both cases it is important that data measured into the PCRs is carefully chos
 </table>
 
 PCR 0 changes on firmware updates; PCR 1 changes on basic hardware/CPU/RAM replacements.
+
+[systemd-stub](https://www.freedesktop.org/software/systemd/man/latest/systemd-stub.html) measures SMBIOS
+Type 1, 2, 11 objects when it is executed. These objects are used to parameterize the OS, and hence
+important to measure. Some firmwares do not measure SMBIOS structures on their own, hence this is supposed to
+fill the gap on such systems. Note that the Type 1 field for the wakeup source is masked to zero before the
+measurement is made, in order to provide stable measurements independently of system wakeup sources.
 
 PCR 4 changes on boot loader updates.
 The shim project will measure the PE binary it chain loads into this PCR.
