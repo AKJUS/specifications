@@ -94,7 +94,7 @@ In both cases it is important that data measured into the PCRs is carefully chos
    <td class=number></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
-   <td><code>os-separator</code> barrier when leaving initrd</td>
+   <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
    <td><code>/run/log/systemd/tpm2-measure.log</code></td>
    <td>n/a</td>
   </tr>
@@ -110,9 +110,18 @@ In both cases it is important that data measured into the PCRs is carefully chos
 
   <tr>
    <td class=number></td>
+   <td class=systemd><code>systemd-stub 🚀</code></td>
+   <td>UEFI Stub</td>
+   <td>Measurement of SMBIOS Type 1, 2, 11 as set when the UEFI stub takes over</td>
+   <td>UEFI TPM event log</td>
+   <td>n/a</td>
+  </tr>
+
+  <tr>
+   <td class=number></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
-   <td><code>os-separator</code> barrier when leaving initrd</td>
+   <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
    <td><code>/run/log/systemd/tpm2-measure.log</code></td>
    <td>n/a</td>
   </tr>
@@ -130,7 +139,7 @@ In both cases it is important that data measured into the PCRs is carefully chos
    <td class=number></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
-   <td><code>os-separator</code> barrier when leaving initrd</td>
+   <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
    <td><code>/run/log/systemd/tpm2-measure.log</code></td>
    <td>n/a</td>
   </tr>
@@ -148,7 +157,7 @@ In both cases it is important that data measured into the PCRs is carefully chos
    <td class=number></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
-   <td><code>os-separator</code> barrier when leaving initrd</td>
+   <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
    <td><code>/run/log/systemd/tpm2-measure.log</code></td>
    <td>n/a</td>
   </tr>
@@ -166,7 +175,7 @@ In both cases it is important that data measured into the PCRs is carefully chos
    <td class=number></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
-   <td><code>os-separator</code> barrier when leaving initrd</td>
+   <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
    <td><code>/run/log/systemd/tpm2-measure.log</code></td>
    <td>n/a</td>
   </tr>
@@ -193,7 +202,7 @@ In both cases it is important that data measured into the PCRs is carefully chos
    <td class=number></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
-   <td><code>os-separator</code> barrier when leaving initrd</td>
+   <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
    <td><code>/run/log/systemd/tpm2-measure.log</code></td>
    <td>n/a</td>
   </tr>
@@ -202,7 +211,7 @@ In both cases it is important that data measured into the PCRs is carefully chos
    <td class=number><p style="text-align: right"><strong>6</strong></p></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
-   <td><code>os-separator</code> barrier when leaving initrd</td>
+   <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
    <td><code>/run/log/systemd/tpm2-measure.log</code></td>
    <td>n/a</td>
   </tr>
@@ -220,7 +229,7 @@ In both cases it is important that data measured into the PCRs is carefully chos
    <td class=number></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
-   <td><code>os-separator</code> barrier when leaving initrd</td>
+   <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
    <td><code>/run/log/systemd/tpm2-measure.log</code></td>
    <td>n/a</td>
   </tr>
@@ -274,7 +283,7 @@ In both cases it is important that data measured into the PCRs is carefully chos
    <td class=number></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
-   <td><code>os-separator</code> barrier when leaving initrd</td>
+   <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
    <td><code>/run/log/systemd/tpm2-measure.log</code></td>
    <td>n/a</td>
   </tr>
@@ -319,7 +328,7 @@ In both cases it is important that data measured into the PCRs is carefully chos
    <td class=number></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
-   <td><code>os-separator</code> barrier when leaving initrd</td>
+   <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
    <td><code>/run/log/systemd/tpm2-measure.log</code></td>
    <td>n/a</td>
   </tr>
@@ -337,7 +346,7 @@ In both cases it is important that data measured into the PCRs is carefully chos
    <td class=number></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
-   <td><code>os-separator</code> barrier when leaving initrd</td>
+   <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
    <td><code>/run/log/systemd/tpm2-measure.log</code></td>
    <td>n/a</td>
   </tr>
@@ -355,7 +364,7 @@ In both cases it is important that data measured into the PCRs is carefully chos
    <td class=number></td>
    <td class=systemd><code>systemd-pcrosseparator.service 🚀</code></td>
    <td>Userspace</td>
-   <td><code>os-separator</code> barrier when leaving initrd</td>
+   <td><code>os-separator</code> barrier when the TPM device becomes available to userspace</td>
    <td><code>/run/log/systemd/tpm2-measure.log</code></td>
    <td>n/a</td>
   </tr>
@@ -390,6 +399,12 @@ In both cases it is important that data measured into the PCRs is carefully chos
 
 PCR 0 changes on firmware updates; PCR 1 changes on basic hardware/CPU/RAM replacements.
 
+[systemd-stub](https://www.freedesktop.org/software/systemd/man/latest/systemd-stub.html) measures SMBIOS
+Type 1, 2, 11 objects when it is executed. These objects are used to parameterize the OS, and hence
+important to measure. Some firmwares do not measure SMBIOS structures on their own, hence this is supposed to
+fill the gap on such systems. Note that the Type 1 field for the wakeup source is masked to zero before the
+measurement is made, in order to provide stable measurements independently of system wakeup sources.
+
 PCR 4 changes on boot loader updates.
 The shim project will measure the PE binary it chain loads into this PCR.
 If the Linux kernel is invoked as UEFI PE binary, it is measured here, too.
@@ -402,9 +417,13 @@ PCR 5 changes when partitions are added, modified, or removed.
 
 PCR 7 changes when UEFI SecureBoot mode is enabled/disabled, or firmware certificates (PK, KEK, db, dbx, …) are updated.
 The shim project will measure most of its (non-MOK) certificates and SBAT data into this PCR.
+
 [systemd-pcrosseparator.service](https://www.freedesktop.org/software/systemd/man/systemd-pcrosseparator.service.html)
-extends PCRs 0–7, 9, 12–14 with the literal word `os-separator` as a barrier when leaving the initrd,
-so the PCRs differ between the initrd and the main OS.
+extends PCRs 0–7, 9, 12–14 with the literal word `os-separator` as a barrier measurement when userspace first
+sees the TPM device, so that firmware and OS measurements are clearly isolated from each other and
+distinguishable. This provides protection for systems where the firmware does not generate the UEFI-mandated
+measurement on its own, or doesn't natively support TPMs at all (for example because the TPM is emulated in
+software).
 
 PCR 11 and 15 as shown in the list above are used by multiple components of systemd.
 These are not conflicting uses;
